@@ -182,10 +182,3 @@ input[type="checkbox"]{
 input[type="radio"]:checked{
     background-color: blue;
 }
-
-.Output{
-
-    width: 150px;
-
-    height: 180px;
-}
