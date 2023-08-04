@@ -1,0 +1,191 @@
+html{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(to right,rgba(88, 50, 210, 0.911) 80%,rgb(17, 230, 230));
+}
+
+.container1{
+    max-width: 500px;
+    width: 25%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container1 .wel{
+    margin-bottom: 380px;
+    color: #fff;
+}
+.container1 .button{
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    background:#fff;
+    color:rgb(76, 65, 65);
+    border-color: #ffffff2f;
+}
+.container2,.Output{
+    max-width: 65rem;
+    padding: 20px 22px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin: 35px 2px;
+    align-items: center;
+justify-content: center;
+}
+
+.container2 .title{
+   
+    margin-left: 40px;
+}
+
+.container2 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-details .input-box{
+    width: calc(100%/2 - 20px);
+    margin: 20px 0 0 0;
+   flex-wrap: wrap;
+}
+
+.user-details .input-box input{
+        height: 40px;
+        width: 75%;
+        outline: none;
+        border-radius: 8px;
+        border-color:rgba(165, 176, 187, 0.352);
+        padding-left: 15px;
+        font-size: 16px;
+        margin-left:30px;
+}
+
+.user-details .input-box select{
+    height: 40px;
+    width: 78%;
+    outline: none;
+    border-radius: 8px;
+    border-color:rgba(165, 176, 187, 0.726);
+    padding-left: 15px;
+    font-size: 16px;
+    margin-left:30px;
+}
+.container2 .box2{
+    width: 16rem;
+    height: 2.5rem;
+    background-color: blue;
+    border-radius: 50px;
+    float: right;
+}
+
+
+.container2 .box2 .btn1{
+width: 50%;
+height: 100%;
+ background-color: white;
+ color:blue;
+ border-radius: 50px;
+ border-color: rgba(0, 0, 255, 0.134);
+ font-size: 20px;
+ font-weight: bold;
+}
+
+.container2 .box2 .btn2{
+    width: 50%;
+height: 100%;
+    background-color: blue;
+    color: white;
+    float: right;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 255, 0.189);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gender .Male,.gender .Female{
+    height:20px;
+    width:20px;
+  margin-top: 20px;
+  margin-left: 26px;
+}
+
+.TandC{
+    margin-left: 21px;
+    margin-top: 12px;
+}
+.TandC .switch1{
+    position: relative;
+    display: inline-block;
+    width:2rem;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.208);
+    border-radius: 2rem;
+    transition: all 0.3s linear ;
+}
+
+.TandC .switch1::after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height:1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s linear ;
+}
+
+input[type="checkbox"]:checked +.switch1::after{
+    translate: 16px 0;
+}
+input[type="checkbox"]:checked +.switch1{
+    background-color: blue;
+}
+
+input[type="checkbox"]{
+    opacity: 0;
+}
+
+.TandC .condition{
+    width: 100%;
+}
+.submit .but{
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    width: calc(100%/2)-20px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    background: blue;
+    color: #fff;
+    border-color: rgba(0, 0, 255, 0.218);
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+}
+
+input[type="radio"]:checked{
+    background-color: blue;
+}
+
+.Output{
+
+    width: 150px;
+
+    height: 180px;
+}

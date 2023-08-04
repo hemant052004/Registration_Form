@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<title>Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="black">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container1">
+        <h1 class="wel">Welcome</h1>
+        <button class="button"  type="button" id="login">Login</button>
+    </div>
+
+ <div class="container2">
+
+    <div class="box2">
+
+        <button class="btn1" type="button" id="em" onclick="Leftclick()">Employee</button>
+        <button class="btn2" id="hire" type="button" onclick="Rightclick()">Hirer</button>
+
+    </div>
+
+    <div class="title">
+        <h1 class="head" id="heading">Apply as a Employee</h1>
+    </div>
+
+    <form action="http://localhost/Registration%20form/" name="myForm" onsubmit="return validateForm()" method="post">
+
+        <div class="user-details">
+
+            <div class="input-box">
+                <input type="text" id="fname" name="fname" placeholder="Full Name *" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="femail" name="email" placeholder="Your Email *" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="pass" name="Password" placeholder="Password *" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="cpass" name="Cpassword" placeholder="Confirm Password *" required>
+            </div>
+
+            <div class="input-box">
+                <input type="date" id="Dob" name="D.O.B" placeholder="D.O.B *" min="1980-01-01" max="2005-12-31" required> 
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="phone" name="Mobile.no" placeholder="Mobile No.*" required>
+            </div>
+
+            <div class="input-box">
+            
+                <select id="country" name="country" required>
+                <option value="0" label="Select a country ... " selected="selected" >Select a Country ... 
+                  <option value="australia">INDIA</option>
+                  <option value="canada">AMERICA</option>
+                  <option value="usa">RUSSIA</option>
+                </option>
+                </select>
+              </div>
+        </div>
+
+        <div class="gender">
+            <input type="radio" id="genderM" name="gender"class="Male" value="male" required>
+            <label for="male" id="checkbox" class="gender">Male</label>
+            <input type="radio" id="genderF" name="gender"class="Female" value="female">
+            <label for="female" id="checkbox" class="gender">Female</label>
+        </div>
+
+        <div class="TandC" >
+            <input type="checkbox" name="checkbox" id="toggle" required>
+            <label for="toggle" class="switch1" id="check"></label>
+            <p class="condition">I accept the <a href="">Terms and Services</a> as well as <a href="">Privacy Policy</a>
+            </p>
+        </div>
+
+        <div class="submit">
+            <input class="but" type="submit" value="Register">
+        </div>
+ </div>
+    
+</form>
+<script src="script.js"></script>
+</body>
+</html>
